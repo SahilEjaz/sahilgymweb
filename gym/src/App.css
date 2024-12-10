@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Fallback color */
+  color: #333;
+  min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  flex: 1; /* Allow the main content to grow and push the footer down */
+}
+
+.header {
+  background: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.header nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.header nav ul li a:hover {
+  color: #ff6347;
+}
+
+.main {
+  text-align: center;
+  padding: 50px 20px;
+  background-image: url('https://images.pexels.com/photos/29639963/pexels-photo-29639963/free-photo-of-modern-gym-interior-with-red-neon-lighting.jpeg'); /* Background image URL */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the background image */
+  min-height: calc(100vh - 160px); /* Adjust height to account for header and footer */
+}
+
+.hero {
+  background: rgba(255, 99, 71, 0.8); /* Semi-transparent background */
+  color: white;
+  padding: 50px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button {
+  background: #ff6347;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s; /* Add transition for background and transform */
+}
+
+.cta-button:hover {
+  background: #ffcc00; /* Change background color on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.services {
+  margin-top: 50px;
+  color: white; /* Change text color of services to white */
+}
+
+.service-card {
+  display: inline-block;
+  background: white; /* Set background color to white */
+  color: #333; /* Text color */
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background 0.3s; /* Add transition for transform and background */
+}
+
+.service-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+  background: #ff6347; /* Change background color to red on hover */
+  color: white; /* Change text color to white on hover */
+}
+
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+h2 {
+  background: rgba(255, 0, 0, 0.5); /* Transparent red background */
+  color: white; /* Text color */
+  padding: 10px; /* Padding around the text */
+  border-radius: 5px; /* Optional: rounded corners */
+}
